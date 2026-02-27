@@ -16,6 +16,7 @@ print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Exit")
 while True:
     choice = input("Enter choice(1/2/3/4): ")
     if choice in ('1', '2', '3', '4'):
@@ -29,6 +30,8 @@ while True:
             print(num1, "*", num2, "=", multiply(num1, num2))
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+        elif choice == '5':
+            print("Exiting the program.")
         break
     else:
         print("Invalid Input")
